@@ -1,0 +1,40 @@
+a) Brute Force Approach
+
+1. Create an array A with n-elements each element is a digit of the long integer. Create an array B with n-elements each element is a digit of the long integer. 
+Create an array C with n-elements each element is a digit and initialise them to zero.
+
+2. Multiply first digit from B by first digit of A and add the results to C as a first digit.
+
+3. If the result is larger than 9 take the integer as a carry and add it to the next digit of C. 
+
+4. Repeat 2,3 for all digits of A and store the rst in the corresponding digit of C.
+
+5. Shift one bit in C and repeat 2,4 but for the next digit of B.
+
+6. The bit product should be found in array C.
+
+b) Recusive
+
+to get n-bit A*B -> 2n-bit C
+
+1. Create 2*(n/2 digit) array AH, Al. Create 2*(n/2 digit) BH, BL. Create 4*(n/2 digit) array CHH, CLH, CLL and CHL.
+
+2. CLL = AL * BL.
+
+3. If the last digit > 9 then take the integer/10 and add this to CLH and store mod 10 in the last digit of CLL.
+
+4. RLH += AL* BH + AH * BL. This is for n/2 (Divide and Conquer). Repeat 3 for the last bit of CLH.
+
+5. CLH += AH * BH and repeat 3 for RHL.
+
+c) The recurrence is : T(n) = 3T(n/2) + O(n).
+
+d) 
+
+e) Using the master methode :
+a=3, b=2, f(n)=n,
+n^log3^2= n^1.59
+n<n^1.59
+case 1:
+O(n^1.59)
+
