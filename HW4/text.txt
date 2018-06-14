@@ -1,0 +1,34 @@
+a)
+//This is a simple Bubble Sort Algorithm
+for (i = 0 to i < length){ //loop from 0 to length of the array
+    for (j = i + 1 to j < length){ //loop from i+1 to length of the array
+        if(array[i] > array[j]){
+            temp = array[i]; //the purpose of Temp is to be a dummy used to switch array[i] with array[j]
+            array[i] = array[j]; //swaping
+            array[j] = temp; //swaping
+        }
+    }
+}
+
+b)
+
+Worst O(n^2)
+Average Θ(n^2)
+Best Ω(n)
+
+Because we need to loop through the array twice in the worst and average cases the complexity is O(n^2).
+But when the array is sorted then the complexity is going to be Ω(n).
+
+c)
+
+Bubble Sort, Insertion Sort and Merge Sort are sortig algorithms that are stable because they
+always keep record of the current element in the array and another element reltive to the 
+current element in the array. They maintain stability by ensuring that 
+Element A[j] comes before A[i] if and only if A[j] < A[i], here i, j are indices and i < j.
+Since i < j, the relative order is preserved if A[i]==A[j] i.e. A[i] comes before A[j].
+
+d)
+
+Insertion Sort and Bubble Sort are both adaptive because they have a Best case of Ω(n) while 
+the average and the worst cases are O(n^2), therefore this shows that the benifit from the
+pre-sorted elements in the array.
