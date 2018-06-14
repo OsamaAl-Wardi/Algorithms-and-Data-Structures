@@ -1,0 +1,2 @@
+The brute force approach would be try all combinations of paths possible. This is solution is O(2^n) interms of runtime.
+The Dynamic Programming approach, however is O(n^2) because it uses a bottom up approach and so many comparisons are not recomputed.
