@@ -1,0 +1,12 @@
+We can have two stacks stack 1 and stack 2 and for the en-queue operation the new element is entered at the top of stack1.
+In de-queue operation, if stack2 is empty then all the elements are moved to stack2 and finally top of stack2 is returned.
+
+enQueue(q,  x)
+  1) Push x to stack1.
+
+deQueue(q)
+  1) If both stacks are empty then error.
+  2) If stack2 is empty While stack1 is not empty, push everything from stack1 to stack2.
+  3) Pop the element from stack2 and return it.
+
+Note: There is a visual attached to this Excerise in the zip file.

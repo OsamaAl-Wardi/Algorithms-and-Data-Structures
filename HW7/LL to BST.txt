@@ -1,0 +1,11 @@
+struct node BST (struct Node* head, int n){
+    struct Node * cursor = head;
+    struct node Root;
+    for (int i = 0; i < (n/2) + 1; i++){
+        cursor = cursor->next;
+    }
+    Root -> data = cursor -> data;
+    Root->left = BST(head, n/2);
+    Root -> right = BST(cursor->next, n-(n/2)-1);
+    return Root;
+}

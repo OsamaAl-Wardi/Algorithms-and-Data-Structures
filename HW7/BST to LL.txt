@@ -1,0 +1,34 @@
+Node* InsertLNode(Node *head,int data)
+{
+    Node *temp = new Node();
+    temp->data = data;
+    temp->next = NULL;
+   if(head==NULL)
+   {
+       head = temp;
+   }
+   else if(head->next==NULL)
+   {
+            head->next = temp;
+            return head;
+    }
+    else
+    {
+        Insert(head->next,data);//Goes to the last element in the Linked list
+    }
+    return head;
+}
+
+void TraverseInorder(struct node* node)
+{
+     if (node == NULL)
+          return;
+          
+     TraverseInorder(node->left);
+     
+     InsertLNode(head , node->data);//the left most node in the BST is inserted in the linked list
+ 
+     TraverseInorder(node->right);
+}
+
+//Please note that node refers to a BST node but Node refers to a likned list node.

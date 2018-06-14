@@ -1,0 +1,27 @@
+
+/*
+This algorithm reverses a linked list and returns pointer to the head.
+The reason this is an in-situ algorithm is that there is a need for one pointer only for any size of Linked List.
+Therefore this is in an O(1) space complexity class.
+/*
+
+
+
+struct Node
+{
+   int data;
+   struct Node *next;
+}
+
+Node* Reverse(Node *head)
+{
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+
+    Node* nextNode = head->next;
+    head->next = NULL;
+    Node* newHead = Reverse(nextNode);
+    nextNode->next = head;
+    return newHead;
+}
