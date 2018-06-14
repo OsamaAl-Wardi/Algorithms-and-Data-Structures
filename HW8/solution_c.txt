@@ -1,0 +1,2 @@
+The reason why there will always be a red node is that the last node to be inserted is always red therefore no matter how many nodes there
+are there must be one that is red which is the last instered node.
