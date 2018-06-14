@@ -1,0 +1,17 @@
+c)
+With the best case the variant is going to have a O(n) run time because insertion sort is O(n) in best case senarios. 
+And the bigger the k is there is a slight increase in run time as well beacuse the slope of line is very small.
+
+With the average case we see that the run time is going to be O(n^2) and with the increase of the k the more insertion sort has
+to be implemented and so the higher the time complexity will be.
+
+With the worst case senario the run time is O(n^2) even though the scatter graph is inaccurate but with the increase of the k 
+the higher the complexity is going to be.
+
+So in most cases merge sort acts as a factor to increase time complexity but, Insertion sort is the main algorithm that is driving 
+the program especially with the increasing k values.
+
+d) 
+
+Based on the results from (b) and (c), I would choose k to be fairlly small so it will not have large subarrays to sort
+but have smaller ones to increase the run time.
