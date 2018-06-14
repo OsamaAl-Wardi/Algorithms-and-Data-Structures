@@ -1,0 +1,4 @@
+Looking at the example given in the lecture, we can look at the duration of the activities. This can be done by (Fi-Si)
+then we can try to combine the ones with the shortest duration. We will find that this is not nesscarily 
+the optimal solution to the problem because our mutualy compatible condition is the decider if they activities enter the same set.
+Therefore the combination we can get of the shortest duration in this example is 2 but the optimal is 4.

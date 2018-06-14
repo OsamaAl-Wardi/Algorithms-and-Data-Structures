@@ -1,0 +1,29 @@
+ListOfActivities //a list with unsorted activities
+SolutionList //new list for selected values making up the optimal solution
+Struct Stime and Etime  //2 structs which include the start and end of the activities
+Bool Func1(Stime, Etime) //function that checks for overlay
+IF((Stime.start < Etime.end) AND (Stime.end >= Etime.end))
+	RETURN 1
+IF ((Stime.start <= Etime.start) AND (Stime.end > Etime.start))
+	RETURN 1
+ELSE
+	RETURN 0
+
+
+
+FindSolution (ListOfActivities, SolutionList) 
+	FOR( i =  ListOfActivities.size; i++)
+		LStartTime = ListOfActivities[i]
+		IF(ListOfActivities[i] < ListOfActivities[i+1])
+			LStartTime = ListOfActivities[i+1]
+PUT LStartTime at the end of the list
+Start = ListOfActivities[0] 
+End = ListOfActivities[1..endOfList]
+IF (Collisions == 1)
+	Return Func1(tail,SolutionList)
+ELSE
+IF ((1 + FindSolution(tail, SolutionList) + head) > (FindSolution(tail, SolutionList))) 
+		Return (1 + FindSolution(tail, SolutionList) + head)
+ELSE
+		Return FindSolution(tail, SolutionList)
+
