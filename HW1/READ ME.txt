@@ -1,0 +1,3 @@
+This is Osama AL-Wardi's Alogrithsms and Data Structures homework. It includes source C++ code and PDf documnets that
+document the graphs and Question 1 and Question 2)b). I used the C++ source code with the tester programs to gather my results.
+If you have any questions please let me know at o.alwardi@jacobs-university.de. 

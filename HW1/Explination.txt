@@ -1,0 +1,6 @@
+The plot of the worst case, best case and average case senarios 
+can be interpreted similarly because in all of the cases the complexity of the algorithm is O(n^2). 
+This is because in each iteration of first loop selecting 
+the minimum requires scanning n elements taking n-1 comparisons and then swapping it into the first position. 
+Then we have to loop over over all the rest of 
+the elements in the array in finding the next lowest element requires scanning the remaining n-1 elements and so on.
